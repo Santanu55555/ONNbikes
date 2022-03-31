@@ -1,0 +1,143 @@
+#logins{
+    display: flex;
+    margin: auto;
+    height: 440px;
+    width: 1130px;
+    margin-top: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    border-radius: 5px;
+    background-color: white;
+  }
+  #log{
+      border-right: 1px solid rgba(0, 0, 0, 0.158);
+      width: 1850px;
+      padding-left: 43px;
+      box-sizing: border-box;
+  }
+  
+  #sign{
+      background-color: #acabab09;
+      box-sizing: border-box;
+      padding-left: 43px;
+     
+  }
+  #Form{
+      width: 400px;
+      display: grid;
+      line-height: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+      
+  }
+  #email,#pass{
+      height: 40px;
+      border-radius: 7px;
+      border-color:rgba(0, 0, 0, 0.308);
+      outline-color: white;
+      border-width: 1;
+      
+  } 
+  #check{
+      display:flex;
+      outline: none;
+      border-color:rgba(0, 0, 0, 0.308);
+      outline-color: white;
+      
+  }
+  #check:focus{
+    box-shadow: #02B875 0px 0px 0px 2px, #02B875 0px 4px 6px -1px, #02B875 0px 1px 0px inset;
+      background-color: #02B875;
+  }
+input+label{
+    margin-left: 17px;
+    margin-top: -17px;
+  }
+  #sumbitbtn{
+    width: 90px;
+    height: 30px;
+    margin-bottom: 20px;
+    font-family: Poppins,Helvetica,sans-serif;
+    border-radius: 2px;
+    background-color: #02b875;
+    border: solid 1px #015335;
+    background-image: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-shadow: none;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  #sumbitbtn:hover{
+    background-color: #02b875bb;
+  }
+  #foot{
+      display: flex;
+  }
+  span{
+    font-family: Arial, "Helvetica Neue", Helvetica;
+        font-weight: bold;
+        font-size: 18px;
+        color: #183247;
+        margin-top: 7px;
+        margin-left: 7px;
+  }
+  #foot div{
+      display: flex;
+      border: 1px solid rgba(0, 0, 0, 0.219);
+      height: 34px;
+      width: 34px;
+      border-radius: 50%;
+      
+  }
+  div>i{
+      margin: auto;
+  }
+  #a{
+    margin-top: 10px; 
+    margin-left: 10px;
+    font-size: 16px;
+    color: #02B875;
+    font-weight: 700;
+    font-family: Arial, "Helvetica Neue", Helvetica;
+  }
+  h2{
+      font-size: 20px;
+      font-family: Poppins,Helvetica,sans-serif;
+      color: #183247;
+      font-weight: 600;
+  }
+  label,label+a,p{
+      font-size: 14px;
+      color: #183247;
+  }#sign>h1{
+    font-family: Poppins,Helvetica,sans-serif;
+
+    color: #183247;
+    font-size: 24px;
+  }
+  #sign>h1+div{
+    border-radius: 2px;
+    background-color: #f3f5f7;
+    border: solid 1px #97a9ba;
+    font-family: Poppins,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #183247;
+    padding: 5px 20px;
+    width: 130px;
+  }
+  #para{
+      display: flex;
+      font-size: 14px;
+      padding-right: 100px;
+      box-sizing: border-box;
+    
+    font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+  }
+  #log,#sign{
+      padding-top: 10px;
+  }
+  #sup:hover{
+    background-color:#8f90922c
+  }

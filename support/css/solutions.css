@@ -1,0 +1,44 @@
+.page-tabs>div:nth-child(2){
+    border-top: 3px solid #02B875;
+}
+.active{
+    font-weight: bold;
+}
+.padding{
+	display: flex;
+	background-color: white;
+	padding-left: 100px;
+	padding-top: 7px;
+	height: 40px;
+	border-bottom: 1px solid #02B875;
+	border-top: 1px solid #02B875;
+}
+.hc-search{
+	margin-top: -20px;
+}
+	#search{
+		
+width: auto;
+height: 30px;
+margin-left: 10px;
+border: none;
+	}	
+#search:focus{
+	border: none;
+	outline-color: white;
+	box-shadow: none;
+}	
+#search::placeholder{
+	padding-left: 0;
+}
+	#sl{
+		display: flex;
+		position: relative;
+		margin-left: 45px;
+		margin-top: 7px;
+	
+	}
+	.hc-nav{
+		margin-left: 300px;
+		margin-top: 15px;
+	}
