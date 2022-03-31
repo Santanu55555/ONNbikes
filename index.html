@@ -140,9 +140,8 @@
             </div>
         </div>
     </div>
-   <div id="footer"></div>
-   <!-- from here some popup things are adding -->
-   <!-- this is choose city popup -->  
+   <div id="footer"> </div>
+  
         <div class="selectCity-overlay hide">
             <div class="selectCity">
                 <div class="removeSelectCity" onclick="removePopUp('selectCity-overlay')"></div>
@@ -271,16 +270,16 @@
 </html>
 <script type="module">
 import {footer} from './footer.js'
-console.log('footer:', footer)
+// console.log('footer:', footer)
 let Santanu= document.getElementById('footer')
-Santanu.innerHTML=(footer)
+Santanu.innerHTML=footer()
 import {fleet} from './fleet.js'
 
 let MOhapatra= document.getElementById('fnp')
-MOhapatra.innerHTML=(fleet)
+MOhapatra.innerHTML=(fleet())
 
 import {body1} from './body.js'
 let okjaanu= document.getElementById('mainpart')
-okjaanu.innerHTML=(body1)
+okjaanu.innerHTML=(body1())
 
 </script>

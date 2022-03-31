@@ -1,5 +1,5 @@
 function footer(){
-    return ` <!-- footer html starts from here -->
+    return `
     <footer>
         <div class="footer_upperPart flex-box-space-btw">
             <div>
