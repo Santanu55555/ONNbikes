@@ -14,11 +14,11 @@
 
 <body>>
     <div id="id nahi he"></div>
-   <div id="footer"> </div>
+   
   
       <div id="popupkrte"></div>
 
-
+      <div id="footer"> </div>
 </body>
 <script src="home.js"></script>
 
@@ -29,10 +29,7 @@
     import {popup1} from './popup.js'
 let notokjaanu= document.getElementById('popupkrte')
 notokjaanu.innerHTML=(popup1())
-import {footer} from './footer.js'
-// console.log('footer:', footer)
-let Santanu= document.getElementById('footer')
-Santanu.innerHTML=footer()
+
 import {fleet} from './fleet.js'
 
 let MOhapatra= document.getElementById('fnp')
@@ -41,4 +38,8 @@ MOhapatra.innerHTML=(fleet())
 import {body1} from './body.js'
 let okjaanu= document.getElementById('mainpart')
 okjaanu.innerHTML=(body1())
+import {footer} from './footer.js'
+// console.log('footer:', footer)
+let Santanu= document.getElementById('footer')
+Santanu.innerHTML=footer()
 </script>
