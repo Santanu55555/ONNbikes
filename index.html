@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home1.css"
+    />
+    <!-- page logo -->
+    <link rel="icon" href="https://www.onnbikes.com/img/favicon32.png">
+    <!-- my css file    -->
+    <link rel="stylesheet" href="home.css">
+    <title>ONN Bikes </title>
+
+</head>
+
+<body>
+
+    <!-- header css -->
+    <header class="Hoome" id="Hoome">
+        <div class="image_container">
+            <nav class="home_nav_bar">
+                <ul class="flex-box-space-btw">
+                    <li>
+                        <a href="#whyONNId">WHY ONN?</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showFleetAndPricing()">FLEET AND PRICING</a>
+                    </li>
+                    <li>
+                        <a href="./safetypage/safety.html">SAFETY</a>
+                    </li>
+                    <li class="logo_li">
+                        <a href="#">
+                            <img src="images/onn logo/ONN logo.png" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./8juneFAQ/index.html">FAQ</a>
+                    </li>
+                    <li style="position: relative;">
+                        <a href="#Hoome" onclick="showLoginPopup()" class="signupNav"> LOGIN/SIGNUP</a>
+                        <a href="#" onclick="showWelcomeContent()"class='welcomeNav hide'>WELCOME <span class="fa fa-caret-down"></span></a>
+                        <div class="welcome-collapse-content">
+                            <p onclick="showMyAccount()"><i class="fa fa-user"></i> MY ACCOUNT</p>
+                            <p onclick='logoutUser()'><i class="fas fa-sign-out-alt"></i> LOGOUT</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="tel:+91708467376">+91708467376</a>
+                    </li>
+                    <div class="hamburgerMenu" onclick="showMobileNavBar()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="mobileNavBar">
+                        <ul>
+                            <li>
+                                <a href="#whyONNId">WHY ONN?</a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showFleetAndPricing()">FLEET AND PRICING</a>
+                            </li>
+                            <li>
+                                <a href="./safetypage/safety.html">SAFETY</a>
+                            </li>
+                            <li>
+                                <a href="./8juneFAQ/index.html">FAQ</a>
+                            </li>
+                            
+                            <li style="position: relative;">
+                                <a href="#Hoome" onclick="showLoginPopup()" class="signupNav"> LOGIN/SIGNUP</a>
+                                <a href="#" onclick="showWelcomeContent()" class='welcomeNav hide'>WELCOME <span
+                                        class="fa fa-caret-down"></span></a>
+                                <div class="welcome-collapse-content">
+                                    <p onclick="showMyAccount()"><i class="fa fa-user"></i> MY ACCOUNT</p>
+                                    <p onclick='logoutUser()'><i class="fas fa-sign-out-alt"></i> LOGOUT</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <a href="#"> +7008467376</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+          <div id="mainpart"></div>
+    <div class="main_contentFaq">
+        <div class="FAQs_section">
+            <h2>Top FAQs</h2>
+            <p>Renting a Bike should be Easy, Like our FAQs.</p>
+
+            <div class="FAQ_ques_section flex-box-space-btw">
+                <div>
+                    <h3><i class="fas fa-circle"></i> How do I pay?</h3>
+                    <p>You can pay online using debit/credit card or e-wallets. You can also pay at the hub station
+                        during your vehicle
+                        pick-up.</p>
+                    <h3><i class="fas fa-circle"></i> Where can I pick up the bike from?</h3>
+                    <p>While booking your bike, you’ll be given an option to select a pick-up location in your vicinity.
+                    </p>
+                </div>
+                <div>
+                    <h3><i class="fas fa-circle"></i> What documents do I need to show while booking?</h3>
+                    <p>You need to show your original valid driving license and submit any one original government
+                        verified ID proof.</p>
+                    <h3><i class="fas fa-circle"></i> Will I be getting a complimentary helmet?</h3>
+                    <p>Due to COVID-19 pandemic, we avoid providing helmets to customers. We suggest customers to bring
+                        their own helmets.</p>
+                </div>
+            </div>
+
+            <p class="blog_FAQ_link">If you have any more doubts, please visit our <a href="./8juneFAQ/index.html">FAQ Section</a> <br>
+                Our Daily Bike Renting Plan is the most affordable plan in India. Check out our Fleet and Pricing
+                section on top for
+                more detailed information and if you are a bike enthusiast, check out our Blog.
+            </p>
+            <div class="popular_bike_for_rent">
+                <div class="popular_Bike_Heading">
+                    <h5>Popular Bikes for Rent:</h5>
+                </div>
+                <div>
+                    <p>Honda Activa for rent</p>
+                    <p>Pulsar 150 for rent</p>
+                    <p>Royal Enfield 350 Classic for rent</p>
+                    <p>Avenger 220 Street for rent</p>
+                    <p>Bajaj CT 100 for rent</p>
+                </div>
+                <div>
+                    <p>Honda Activa for rent</p>
+                    <p>Pulsar 150 for rent</p>
+                    <p>Royal Enfield 350 Classic for rent</p>
+                    <p>Avenger 220 Street for rent</p>
+                    <p>Bajaj CT 100 for rent</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="footer"></div>
+   <!-- from here some popup things are adding -->
+   <!-- this is choose city popup -->  
+        <div class="selectCity-overlay hide">
+            <div class="selectCity">
+                <div class="removeSelectCity" onclick="removePopUp('selectCity-overlay')"></div>
+                <div class="searchArea">
+                    <div class="cityInputCont">
+                        <input type="text" name="searchCity" id="searchCity" oninput="filterRideNowCities()" placeholder="Enter your city to search">
+                    </div>
+                    <div class="CitySearchInputInfo">
+                        <p>You've selected <br><span>Bengaluru</span></p>
+                        <p class="city-search-input-info-para2">Tell us where you are and <br>we make sure you #RideONN</p>
+                    </div>
+                </div>
+                <div class="cityArea">
+                    
+                </div>
+            </div>
+        </div>
+
+
+    <!-- this is login popup -->
+    <div class="loginPopupOverlay hide">
+        <div class="loginPop">
+            <div class="loginPopRemove" onclick="removePopUp('loginPopupOverlay')"></div>
+            <div class="logoSec"></div>
+            <div class="otpSec hide">
+                <div class="otp_heading">
+                    <p>OTP VERIFY</p>
+                </div>
+
+                <input type="text" name="otp" id="otp" placeholder="OTP">
+
+                <p class="otpInfo">One Time Password (OTP) has been sent to your mobile, please enter the same here to login.</p>
+                <button onclick="verifyOTP()" class="verifyOTP">Request Verify</button>
+            </div>
+            <div class="formSec">
+                <div class="heading">
+                    <span class="currForm" onclick="showSignup()">LOGIN</span> | <span onclick='showSignup()'>SIGNUP</span>
+                </div>
+                <div class="fb_google">
+                    <div class="fbLogin">
+                        <button>facebook</button>
+                    </div>
+                    <div class="googleLogin">
+                        <button>Google+</button>
+                    </div>
+                </div>
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+                <form id="login_form">
+                    <div class="inputCont">
+                        <input type="text" name="email/number" id="emailORPhone" placeholder="EMAIL ID / Phone number">
+                    </div>
+                    <div class="inputCont">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="inputCont checkbox">
+                        <label for="remember_me">
+                            <input type="checkbox" name="remember_me" id="remember_me"> Remember me
+                        </label>
+                    </div>
+                    <button class="login-Btn" onclick="checkUsers(event)">Login</button>
+                    <div>
+                        <a href="#" onclick="showSignup()">New to ONN Bikes? Signup</a>
+                    </div>
+                </form>
+                <form id="signup_form" class="hide">
+                    <div>
+                        <div>
+                            <input type="text" name="first_name" id="first_name" placeholder="First Name" class="input-event">
+                            <p class="required_field">This field is required</p>
+                            <p class="warning">No space and special character</p>
+                        </div>
+                        <div>
+                            <input type="text" name="last_name" id="last_name" placeholder="Last Name" class="input-event">
+                            <!-- <p class="required_field">This field is required</p> -->
+                            <p class="warning">No space and special character</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" name="email" id="email" placeholder="Email Address" class="input-event">
+                            <p class="required_field">This field is required</p>
+                            <p class="warning">Enter a valid email id</p>
+                        </div>
+                        <div>
+                            <input type="text" name="mobile" id="mobile" placeholder="Mobile Number(10 Digits)" class="input-event">
+                            <p class="required_field">This field is required</p>
+                            <p class="warning">Enter a valid mobile number</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="Password" class="input-event">
+                            <p class="required_field">This field is required</p>
+                            <p class="warning">Minimum 6 character</p>
+                        </div>
+                    </div>
+                    <button class="login-Btn" onclick="signupUser(event)">Signup</button>
+                    <div>
+                        <a href="#" onclick="showSignup()">New to ONN Bikes? Signup</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+<div id="fnp"></div>
+
+    
+    <div class="paymentDoneOrNotOverlay hide">
+        <div class="paymentDoneOrNot">
+            <div class="paymentDoneRemove" onclick="removePopUp('paymentDoneOrNotOverlay')"></div>
+            <div class="paymentResult">
+                <h1>YOUR BOOKING WAS SUCCESSFUL. PAYMENT DONE.</h1>
+                <h1 style="color: #1d2d51;">THANK YOU <i class="fas fa-glass-cheers"></i></h1>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="home.js"></script>
+
+</html>
+<script type="module">
+import {footer} from './footer.js'
+console.log('footer:', footer)
+let Santanu= document.getElementById('footer')
+Santanu.innerHTML=(footer)
+import {fleet} from './fleet.js'
+
+let MOhapatra= document.getElementById('fnp')
+MOhapatra.innerHTML=(fleet)
+
+import {body1} from './body.js'
+let okjaanu= document.getElementById('mainpart')
+okjaanu.innerHTML=(body1)
+
+</script>
