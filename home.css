@@ -1322,12 +1322,12 @@ footer > .footer_upperPart + hr {
   width: 0;
   height: 0;
   overflow: hidden;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 .fleetAndPricingOverlay-cont.active {
   height: 100%;
   width: 100%;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 .fleetAndPricingOverlay-cont.absolute {
   position: absolute !important;
@@ -1373,7 +1373,7 @@ footer > .footer_upperPart + hr {
   content: "\25be";
   position: absolute;
   right: 5%;
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
 }
 .fleetAndPricing_city_cont > .locations {
   padding-left: 2.5rem;
@@ -1383,7 +1383,7 @@ footer > .footer_upperPart + hr {
 }
 .collapse-btn-fleetNPricing.active + .collapse-content-fleetNPricing {
   max-height: 100%;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 .collapse-content-fleetNPricing {
   position: absolute;
@@ -1393,7 +1393,7 @@ footer > .footer_upperPart + hr {
   max-height: 0;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 .collapse-content-fleetNPricing ul {
   display: flex;
