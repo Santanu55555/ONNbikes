@@ -94,8 +94,8 @@ body {
   position: fixed;
   top: -72px;
   transform: translateY(70px);
-  transition: transform 500ms ease, background 900ms ease;
-  -webkit-transition: transform 500ms ease, background 900ms ease;
+  transition: transform 50ms ease, background 90ms ease;
+  -webkit-transition: transform 50ms ease, background 90ms ease;
 }
 .scrollNav a {
   color: rgb(30, 45, 81) !important;
@@ -1517,12 +1517,12 @@ footer > .footer_upperPart + hr {
   margin: 0;
   padding: 1.5rem 1rem;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .welcome-collapse-content > p:hover {
   background-color: #1e2d51;
   color: white;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 /* myAccount css starts form here */

@@ -174,6 +174,7 @@ function showFleetAndPricing() {
     "fleetAndPricingOverlay-cont"
   )[0];
   fleetCont.classList.toggle("active");
+  
 }
 // showFleetAndPricingCity(); and city change logic
 function showFleetAndPricingCity() {
