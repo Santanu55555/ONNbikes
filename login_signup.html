@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./login.css">
+    
+     
+
+</head>
+<body>
+    <a href="#" class="button">Login/ Sign Up</a>
+    
+    <div id="popup">
+        <div class="popup-content">
+            <i class="glyphicon glyphicon-remove" id="close"></i>
+
+            <div id="leftimage">
+                <img src="https://www.iamrenew.com/wp-content/uploads/2019/04/Onn-Bike-Banner.jpg">
+            </div>
+
+            <div id="login-signup">
+
+                <div id="head1">
+                    <div id="login">LOGIN</div>
+                    <div class="vl"></div>
+                    <div id="signup">SIGN UP</div>
+                </div>
+
+                <div id="head2">
+                    <div id="facebook"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png">facebook</div>
+
+                    <div id="google"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdem_ikVAShHAMNgMN-9RoylsBSwgN_wtiqiBXhIEdQBQ4tlMrUH3k1GD3t35P5mAsI1E&usqp=CAU">Google</div>
+                </div>
+
+               <div id="or">....................................<span class="dot">OR</span>....................................</div> 
+              
+                <div id="appendMe"></div>
+                <div id="submit"></div>
+
+           
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>
+
+<script>
+
+
+  document.querySelector(".button").addEventListener("click",() => {
+     
+    document.querySelector("#popup").style.display = "flex"
+    loginFunction()
+
+})
+
+document.querySelector("#close").addEventListener("click",() => {
+     
+     document.querySelector("#popup").style.display = "none" ;
+
+
+})
+
+document.querySelector("#facebook").addEventListener("click",() => {
+     
+     window.location.href = "https://www.facebook.com/login.php?skip_api_login=1&api_key=608370275968306&kid_directed_site=0&app_id=608370275968306&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.8%2Fdialog%2Foauth%3Fapp_id%3D608370275968306%26auth_type%3Drerequest%26cbt%3D1648538785545%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df34e13a4c5db258%2526domain%253Dwww.onnbikes.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.onnbikes.com%25252Ff2c5b5a1eca529c%2526relation%253Dopener%26client_id%3D608370275968306%26display%3Dpopup%26domain%3Dwww.onnbikes.com%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fwww.onnbikes.com%252F%26locale%3Den_US%26logger_id%3Df78b06cf73e574%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfb0c4a907f72%2526domain%253Dwww.onnbikes.com%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fwww.onnbikes.com%25252Ff2c5b5a1eca529c%2526relation%253Dopener%2526frame%253Df338ad786c8dc4%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26scope%3Demail%26sdk%3Djoey%26version%3Dv2.8%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfb0c4a907f72%26domain%3Dwww.onnbikes.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.onnbikes.com%252Ff2c5b5a1eca529c%26relation%3Dopener%26frame%3Df338ad786c8dc4%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0"
+ })
+
+
+   document.querySelector("#signup").addEventListener("click" , ()=> {
+
+            signFunction(event)
+            
+
+   })
+
+       const signFunction = () => {
+
+        document.querySelector("#appendMe").innerHTML= null
+        document.querySelector("#submit").innerHTML = null
+           
+            
+               
+              let name = document.createElement("input")
+              name.placeholder = "First Name" ;
+            
+              let surname =  document.createElement("input")
+               surname.placeholder = "Last Name" ;
+
+               let mail =  document.createElement("input")
+               mail.placeholder = "Email Adress" ;
+               mail.type= "Email" ;
+               mail.setAttribute("id","email")
+
+               let numb = document.createElement("input")
+               numb.placeholder = "Phone Number" ;
+               numb.type= "Number" ;
+               numb.setAttribute("id","number1")
+
+               let pass = document.createElement("input")
+               pass.placeholder = "Password" ;
+               pass.type= "password" ;
+               pass.setAttribute("id","password")
+
+               let pincode = document.createElement("input")
+               pincode.placeholder = "Pin code" ;
+               pincode.type= "Pin code"  ;
+
+               let btn = document.createElement("button");
+               btn.innerText = "Sign Up" ;
+               btn.style.height = "40px" ;
+               btn.style.width = "450px" ;
+               btn.style.margin = "20px" ;
+               btn.style.color = "#fff" ;
+               btn.style.backgroundColor = "#008080" ;
+               btn.addEventListener("click", () =>{
+                   submitMe()
+                   
+               })
+                
+              
+      
+               document.querySelector("#appendMe").append(name,surname,mail,numb,pass ,pincode)
+               document.querySelector("#submit").append(btn)
+
+       }
+
+      let  loginArr = []
+
+
+       const submitMe = () => {
+
+         let obj = {
+             email1 : document.getElementById("email").value ,
+             num1 : document.getElementById("number1").value ,
+             pass1 :  document.getElementById("password").value 
+         }
+     
+
+         loginArr.push(obj)
+        //  console.log(loginArr);
+
+        localStorage.setItem("data",JSON.stringify(loginArr)) ;
+
+       }
+       
+       
+
+
+      
+       document.querySelector("#login").addEventListener("click" , ()=> {
+
+            loginFunction()
+
+       })
+
+    const  loginFunction = () => {
+
+        
+        document.querySelector("#appendMe").innerHTML= null
+        document.querySelector("#submit").innerHTML = null
+             
+
+            let mail =  document.createElement("input")
+               mail.placeholder = "Email ID / Phone Number" ;
+               mail.type= "text" ;
+               mail.setAttribute("id","loginMail")
+
+               let numb = document.createElement("input")
+               numb.placeholder = "Phone Number" ;
+               numb.type= "Number" ;
+               numb.setAttribute("id","loginNum")
+
+               let password = document.createElement("input")
+               password.placeholder = "Password" ;
+               password.type= "password" ;
+               password.setAttribute("id","loginPass")
+
+               let btn = document.createElement("button");
+               btn.innerText = "Login" ;
+               btn.style.height = "40px" ;
+               btn.style.width = "450px" ;
+               btn.style.margin = "20px" ;
+               btn.style.color = "#fff" ;
+               btn.style.backgroundColor = "#008080" ;
+               btn.addEventListener("click", () => {
+                   loginCheck()
+               })
+
+               let div = document.createElement("div")
+               div.style.inlineSpace = "5px"
+               
+
+               let check =  document.createElement("input")
+               check.setAttribute("type","checkbox")
+
+               let remember =  document.createElement("label")
+               remember.innerText = "Remember me"
+               remember.color= "#666";
+               remember.fontSize ="20px" ;
+
+               div.append(check,remember)
+
+               document.querySelector("#appendMe").append(mail,password,div)
+               document.querySelector("#submit").append(btn)
+
+    }
+    
+
+
+            const loginCheck = () => {
+
+            
+                let getData = JSON.parse(localStorage.getItem("data"))
+                
+            let e = document.getElementById("loginMail").value;
+            // let n = document.getElementById("loginNum").value; 
+            let p = document.getElementById("loginPass").value ;
+    
+            console.log(e,p)
+
+            getData.map(function(elem){
+
+               if(elem.email1 === e  && elem.pass1 === p ){
+                   alert("Login Sucessful")
+                   
+               }
+               else{
+                alert("Invalid Id/Password")
+                
+               }
+
+
+            })
+
+
+
+
+
+
+            }
+
+
+
+
+</script>
