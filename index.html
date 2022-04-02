@@ -23,7 +23,10 @@
 <script src="home.js"></script>
 
 </html>
-<script type="module">  import {whole} from './whole.js'
+<script type="module">  
+  
+
+import {whole} from './whole.js'
     let mainherebhai= document.getElementById('id nahi he')
     mainherebhai.innerHTML=(whole())
     import {popup1} from './popup.js'
@@ -39,10 +42,7 @@ MOhapatra.innerHTML=(fleet123())
 import {body1} from './body.js'
 let okjaanu= document.getElementById('mainpart')
 okjaanu.innerHTML=(body1())
-import {footer} from './footer.js'
-// console.log('footer:', footer)
-let Santanu= document.getElementById('footerhe')
-Santanu.innerHTML=footer()
+
 let btn=document.getElementById('button123')
 btn.addEventListener('click',function(){
     document.querySelector(".fetchDiv").style.display = "flex" ;
@@ -370,8 +370,16 @@ const   ahmedabadData = () => {
    p1.innerText = "VIJAY CROSS ROAD"
 
    div.append(p1)
-   document.getElementById("container").append(div)
-        
+   document.getElementById("container").append(div);
+ 
 }
-// fleet js
+
+</script>
+
+<script type="module">
+      import footer from './footer.js'
+console.log('footer:', footer)
+let Santanu= document.getElementById('footerhe')
+Santanu.innerHTML=footer()
+
 </script>
