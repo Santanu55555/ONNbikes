@@ -469,7 +469,7 @@ bikes();
 // function for booknow button
 function fav(e) {
   const currLoggedIn = JSON.parse(localStorage.getItem("currLoggedIn"));
-  if (currLoggedIn.length < 1) {
+  if (currLoggedIn.length == 1) {
     showLoginPopup();
   } else {
     showSelectPickupOverlay();
@@ -823,10 +823,17 @@ function model() {
             pprice.innerHTML = `₹${e.price}`;
             pprice.setAttribute("class", "price");
             btn.innerHTML = "BOOK NOW";
+            btn.addEventListener("click",function() {
+              window.location.href ="../checkout/checkout.html"
+            })
             btn.onclick = function () {
               fav(e);
             };
+
             pricenbooknowdiv.setAttribute("class", "price-N-bookNow");
+            pricenbooknowdiv.addEventListener("click",function(){
+              window.location.href ="./checkout/checkout.html"
+            })
             pricenbooknowdiv.append(pprice, btn);
             noclassdiv.append(
               bikeimgdiv,
