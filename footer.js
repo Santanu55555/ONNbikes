@@ -1,6 +1,6 @@
 function footer(){
     return `
-    <section class="section">
+   
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -80,7 +80,7 @@ function footer(){
             </div>
         </div>
     </div>
-</section>
+
    `
 }
 export default footer
