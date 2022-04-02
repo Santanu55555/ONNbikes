@@ -515,8 +515,9 @@ img {
     color: white;
     height: 100%;
     padding-top: 2%;
+    position:relative;
     list-style: none;
-
+    z-index: 1;
 }
 .footer_heading {
     font-size: 18px;

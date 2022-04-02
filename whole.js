@@ -77,24 +77,24 @@ const whole=()=>{
         <div class="FAQ_ques_section flex-box-space-btw">
             <div>
                 <h3><i class="fas fa-circle"></i> How do I pay?</h3>
-                <p>You can pay online using debit/credit card or e-wallets. You can also pay at the hub station
+                <p class="ulalala">You can pay online using debit/credit card or e-wallets. You can also pay at the hub station
                     during your vehicle
                     pick-up.</p>
                 <h3><i class="fas fa-circle"></i> Where can I pick up the bike from?</h3>
-                <p>While booking your bike, you’ll be given an option to select a pick-up location in your vicinity.
+                <p class="ulalala">While booking your bike, you’ll be given an option to select a pick-up location in your vicinity.
                 </p>
             </div>
             <div>
                 <h3><i class="fas fa-circle"></i> What documents do I need to show while booking?</h3>
-                <p>You need to show your original valid driving license and submit any one original government
+                <p class="ulalala">You need to show your original valid driving license and submit any one original government
                     verified ID proof.</p>
                 <h3><i class="fas fa-circle"></i> Will I be getting a complimentary helmet?</h3>
-                <p>Due to COVID-19 pandemic, we avoid providing helmets to customers. We suggest customers to bring
+                <p class="ulalala">Due to COVID-19 pandemic, we avoid providing helmets to customers. We suggest customers to bring
                     their own helmets.</p>
             </div>
         </div>
 
-        <p class="blog_FAQ_link">If you have any more doubts, please visit our <a href="./FAQ/index.html">FAQ Section</a> <br>
+        <p  class="blog_FAQ_link">If you have any more doubts, please visit our <a href="./FAQ/index.html">FAQ Section</a> <br>
             Our Daily Bike Renting Plan is the most affordable plan in India. Check out our Fleet and Pricing
             section on top for
             more detailed information and if you are a bike enthusiast, check out our Blog.
@@ -103,14 +103,14 @@ const whole=()=>{
             <div class="popular_Bike_Heading">
                 <h5>Popular Bikes for Rent:</h5>
             </div>
-            <div>
+            <div class="ulalala">
                 <p>Honda Activa for rent</p>
                 <p>Pulsar 150 for rent</p>
                 <p>Royal Enfield 350 Classic for rent</p>
                 <p>Avenger 220 Street for rent</p>
                 <p>Bajaj CT 100 for rent</p>
             </div>
-            <div>
+            <div class="ulalala">
                 <p>Honda Activa for rent</p>
                 <p>Pulsar 150 for rent</p>
                 <p>Royal Enfield 350 Classic for rent</p>

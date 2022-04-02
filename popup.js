@@ -119,6 +119,6 @@ function popup1(){
     </div>
 </div>
 </div>
-<div id="footerhe"> </div>`
+`
 }
 export {popup1}
