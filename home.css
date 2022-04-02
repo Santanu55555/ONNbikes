@@ -1433,6 +1433,149 @@ footer > .footer_upperPart + hr {
   margin-right: 5.2rem;
   transition: 0.5s;
 }
+.fetchDiv{
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+
+}
+#fetch-left{
+
+height: 400px;
+width: 250px;
+/* border: 1px solid black; */
+margin-left: 15px;
+margin-top: 90px;
+background-color:#ffff ;
+
+
+}
+#sliding-container{
+     
+  max-width: 1000px;
+  position: relative;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows:repeat(1, 400px);
+  /* border: 1px solid black; */
+  grid-gap: 20px;
+  overflow: auto;
+  
+
+}
+/* .prev , .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+.next{
+  right: 0;
+}
+.prev:hover , .next:hover {
+
+  background-color: rgba(0, 0, 0, 0.4);
+} */
+#sliding-container > div{
+
+  /* padding: 100px; */
+  height: 350px;
+  width: 250px;
+  /* border: 1px solid black; */
+  margin-top: 60px;
+  margin-left: 20px;
+  background-color:#ffff ;
+
+  
+}
+#sliding-container > div
+{
+ text-align: center;
+
+}
+
+#sliding-container > div > h4
+{
+ letter-spacing: 2px;
+ font-weight: 100px;
+ color: black;
+
+}
+#sliding-container > div:hover{
+
+  transform: scale(1.1);
+}
+#select{
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: larger;
+  background-color: rgb(6, 65, 65);
+  color: #ffff;
+  font-weight: bold;
+  cursor: pointer;
+  padding-top: 15PX;
+
+}
+#Newbtn{
+  background-color:white;
+  height:20px;
+width:20px;
+}
+.arrow{
+  /* border: solid black; */
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+      }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  }
+
+#sliding-container > div > img{
+
+    height: 120px;
+    width: 200px;
+  }
+
+  #close1{
+      position: absolute;
+      top: -4px;
+      right: -2px;
+      width: 100px;
+      text-align: center;
+     cursor: pointer;
+  
+  }
+  #close1:hover{
+      transform: scale(1.8);
+  }
+  #sliding-container > div > h5{
+
+      letter-spacing: 2px;
+      color: black;
+  }
+
 .bike_cont_list .bike_cont:hover {
   transform: scale(1.1);
   transition: 0.5s;

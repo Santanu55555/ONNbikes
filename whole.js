@@ -7,7 +7,7 @@ const whole=()=>{
                     <a href="#whyONNId">WHY ONN?</a>
                 </li>
                 <li>
-                    <a href="#" onclick="showFleetAndPricing()">FLEET AND PRICING</a>
+                    <a href="#" id="button123" >FLEET AND PRICING</a>
                 </li>
                 <li>
                     <a href="./safetypage/safety.html">SAFETY</a>

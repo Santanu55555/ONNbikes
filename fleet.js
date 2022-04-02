@@ -1,241 +1,137 @@
-function fleet(){
-    return `
+const fleet123=()=>{
+return`   <div class="fetchDiv">
+<a href="index.html"><button id="Newbtn" > </button></a>
 
-
-
-    <!-- fleet and priing start -->
+<div id="fetch-left">
+    <div id="select">SELECT CITY  <i class="arrow down"></i></div>
+    <div id="append"></div>
+    <div id="container"></div>
+      
+      
+   
+</div>
+<div id="sliding-container">
+    
+    <div>
+        <img src="https://static.autox.com/uploads/bikes/2017/05/1486027965-bajaj-ct100.jpg">
+        <h4>BAJAJ</h4>
+        <h5>CT 100 B</h5>
+        <p>199/- Daily(24 hrs)</p>
+        <p>799/- Weekly(Mon-Fri)</p>
+        <p>2499/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 49/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>
+        <img src="https://imgd.aeplcdn.com/360x202/n/cw/ec/49452/hero-hf-deluxe-front-three-quarter7.jpeg?q=75">
+        <h4>HERO</h4>
+        <h5>HF Delux</h5>
+        <p>199/- Daily(24 hrs)</p>
+        <p>849/- Weekly(Mon-Fri)</p>
+        <p>2899/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 58/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>
+        <img src="https://www.motorbeam.com/wp-content/uploads/2021-Bajaj-CT-110-X-Front-1200x675.jpg">
+        <h4>BAJAJ</h4>
+        <h5>CT 100 </h5>
+        <p> 206/- Daily(24 hrs)</p>
+        <p> 1049/- Weekly(Mon-Fri)</p>
+        <p> 2099/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 69/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://www.motorbeam.com/wp-content/uploads/2016-Bajaj-CT-100B-Side.jpg">
+        <h4>BAJAJ</h4>
+        <h5>CT 100 KS</h5>
+        <p> 199/- Daily(24 hrs)</p>
+        <p> 149/- Weekly(Mon-Fri)</p>
+        <p> 1999/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 89/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+       
+    <div>  <img src="https://images.carandbike.com/bike-images/gallery/honda/dream-neo/exterior/black-with-red-stripes.png">
+        <h4>HONDA</h4>
+        <h5>DREAM NEO</h5>
+        <p> 189/- Daily(24 hrs)</p>
+        <p> 199/- Weekly(Mon-Fri)</p>
+        <p> 2049/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 89/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
         
-        <div class="fleetAndPricingOverlay-cont">
-            <div class="fleetAndPricingOverlay">
-                <div class="closeFleetAndPricing" onclick="showFleetAndPricing()"></div>
-                <div class="fleetAndPricing_city_cont">
-                    <button class="collapse-btn-fleetNPricing" onclick="showFleetAndPricingCity()">
-                        BENGALURU
-                    </button>
-                    <div class="collapse-content-fleetNPricing">
-                        <ul>
-                            <li>BENGALURU</li>
-                            <li>HYDERABAD</li>
-                            <li>JAIPUR</li>
-                            <li>GURUGRAM</li>
-                            <li>MYSURU</li>
-                            <li>PUNE</li>
-                            <li>UDAIPUR</li>
-                            <li>AHMEDABAD</li>
-                        </ul>
-                    </div>
-                    <div class="locations">
-                        <ul>
-                            <li>KOROMANGALA</li>
-                            <li>ELECTRONIC CITY</li>
-                            <li>MS RAMAIAH COLLEGE</li>
-                            <li>KUNDALAHALLI</li>
-                            <li>YELAHANKA</li>
-                            <li>SILK BOARD SRCM</li>
-                            <li>ELECTRONIC CITY HUB</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bike-slider-cont">
-                    <button onclick="slide(-1)"><i class="fas fa-angle-left"></i></button>
-                    
-                    <ul class="bike_cont_list">
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/BajajAvengerCruise220@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Bajaj</h4>
-                                    <h2 class="bike_model">Avenger Cruise 220</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/BajajDominar400ABS@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Bajaj</h4>
-                                    <h2 class="bike_model">Dominar 400 ABS</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/KTMDuke250@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">KTM</h4>
-                                    <h2 class="bike_model">Duke 250</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/YamahaFZ@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Yamaha</h4>
-                                    <h2 class="bike_model">FZ</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/HondaHornet@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Honda</h4>
-                                    <h2 class="bike_model">Hornet</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/HondaActiva4G@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Honda</h4>
-                                    <h2 class="bike_model">Activa</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/BajajPulsar150@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Bajaj</h4>
-                                    <h2 class="bike_model">Pulsar 150</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="bike_cont">
-                                <div class="bike_img_cont">
-                                    <img src="./Ride_now/showroom/RoyalEnfieldThunderbird350@2x.jpg" alt="" srcset="">
-                                </div>
-                                <div class="bike-details">
-                                    <h4 class="bike_name">Royal Enfield</h4>
-                                    <h2 class="bike_model">Thunderbird 350</h2>
-                                    <p>₹129<span>/ Daily(24 hrs)</span></p>
-                                    <p>₹549<span>/ Weekly(Mon-Fri)</span></p>
-                                    <p>₹2949<span>/ Monthly(30 days)</span></p>
-                                    <p>Minimum Billing <span>₹</span>79/4 hours</p>
-                                    <p class="bike-condition">*conditions apply</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <button onclick="slide(+1)"><i class="fas fa-angle-right"></i></button>
-                </div>
-            </div>
-        </div>
-    
-        <div class="myAccountOverlay hide">
-            <div class="myAccount">
-                <div class="removeMyAccount" onclick="removePopUp('myAccountOverlay')"></div>
-                <div class="left-side">
-                    <div class="biker-icon">
-    
-                    </div>
-                    <p class="user-name">rahul rajput</p>
-                    <p class="user-mail">ok@gmail.com</p>
-                    <p class="onn-credits">ONN Credits: 0</p>
-                    <hr>
-                    <button class="bookingHistory-myAccount active" onclick="changeRightOfAccount('historyCont','yourProfileCont','bookingHistory-myAccount','yourProfile-myAccount')"><i class="fas fa-history"></i> Booking History</button>
-                    <button class="yourProfile-myAccount" onclick="changeRightOfAccount('yourProfileCont','historyCont','yourProfile-myAccount','bookingHistory-myAccount')"><i class="fa fa-home"></i> Your Profile</button>
-                </div>
-                
-                <div class="right-side">
-                    <div class="historyCont">
-                        <div class="no-booking-history">
-                            <h1>You have no previous booking with us. Please book a ride to see all updates regarding that in this page.</h1>
-                        </div>
-                    </div>
-    
-                    <div class="yourProfileCont hide">
-                        <div class="edit-account">
-                            <div class="removePencilIcon" onclick="enableInputBox('edit-account')">
-    
-                            </div>
-                            <h3>Edit Account</h3>
-                            <input type="text" name="first_name" id="first_name-yourProfile" disabled value="Rahul">
-                            <input type="text" name="last_name" id="last_name-yourProfile" disabled value = 'Rajput'>
-    
-                            <div class="email-yourProfile">
-                                shaantanu1234@gmail.com
-                            </div>
-                            <div class="mobile-yourProfile">
-                                7008467376
-                            </div>
-    
-                            <textarea name="address" id="address-yourProfile" cols="41" rows="2"
-                            placeholder="Enter Address" disabled></textarea>
-                            <button onclick="updateCurrUserProfile('profile')"><i class="fas fa-sync-alt"></i> UPDATE</button>
-                        </div>
-    
-                        <div class="change-password">
-                            <div class="removePencilIcon"  onclick="enableInputBox('change-password')">
-                            
-                            </div>
-                            <h3>Change Password</h3>
-                            <input type="password" name="old-password" id="old-password" disabled placeholder="Old Password">
-                            <input type="password" name="new-password" id="new-password" disabled placeholder="New Password">
-                            <input type="password" name="confirm-password" id="confirm-password" disabled placeholder="Confirm Password">
-                            <button onclick="updateCurrUserProfile('password')"><i class="fas fa-sync-alt"></i> CHANGE PASSWORD</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    `
+    <div>  <img src="https://bd.gaadicdn.com/processedimages/honda/honda-dream-neo/494X300/m_dream-neo_61539695250.jpg?tr=w-360">
+        <h4>HONDA</h4>
+        <h5>NAVI</h5>
+        <p> 189/- Daily(24 hrs)</p>
+        <p> 849/- Weekly(Mon-Fri)</p>
+        <p> 3099/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 120/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+
+    <div>  <img src="https://images.hindustantimes.com/auto/img/2021/12/08/1600x900/Pearl_Amazing_White_and_Matte_Magnificent_Copper_Metallic_1638870675851_1638958060572.jpg">
+        <h4>HONDA</h4>
+        <h5>ACTIVA</h5>
+        <p> 59/- Daily(24 hrs)</p>
+        <p> 850/- Weekly(Mon-Fri)</p>
+        <p> 2099/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 89/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://images.hindustantimes.com/auto/img/2021/05/08/600x338/Dio_Repsol_Honda_Edition_(1)_1605797662915_1620481099608.jpg">
+        <h4>HONDA</h4>
+        <h5>DIO</h5>
+        <p> 120/- Daily(24 hrs)</p>
+        <p> 1200/- Weekly(Mon-Fri)</p>
+        <p> 3550/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 190/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://cdni.autocarindia.com/ExtraImages/20210219062828_Pulsar_180.jpg">
+        <h4>BAJAJ</h4>
+        <h5>PULSAR 180</h5>
+        <p> 459/- Daily(24 hrs)</p>
+        <p> 3000/- Weekly(Mon-Fri)</p>
+        <p> 6999/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 999/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://cdn.bajajauto.com/-/media/assets/bajajauto/360degreeimages/bikes/pulsar/pulsar-ns-200/ns200-blue/02.png">
+        <h4>BAJAJ</h4>
+        <h5>PULSAR NS</h5>
+        <p> 500/- Daily(24 hrs)</p>
+        <p>3000 /- Weekly(Mon-Fri)</p>
+        <p> 6999/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 159/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://www.rushlane.com/wp-content/uploads/2020/10/yamaha-fzs-fi-bluetooth-launch-2-1200x900.jpg">
+        <h4>YAMAHA</h4>
+        <h5>FZ</h5>
+        <p> 519/- Daily(24 hrs)</p>
+        <p> 2099/- Weekly(Mon-Fri)</p>
+        <p> 6780/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 180/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <div>  <img src="https://imgd.aeplcdn.com/1200x900/n/cw/ec/51748/hornet-right-front-three-quarter-2.jpeg?isig=0">
+        <h4>HONDA</h4>
+        <h5>HORNET</h5>
+        <p> 199/- Daily(24 hrs)</p>
+        <p> 2199/- Weekly(Mon-Fri)</p>
+        <p> 6999/- Monthly(30 days)</p>
+        <p style="color: rgb(99, 97, 97);">Minimum Billing 170/-(4 hrs)</p>
+        <p style="color: rgb(247, 49, 49);">*Conditions Apply</p>
+    </div>
+    <!-- <a class="next" onclick="pluseSlides(1)"> > </a> -->
+</div>
+
+
+
+
+</div>`
 }
-export {fleet}
+export default fleet123

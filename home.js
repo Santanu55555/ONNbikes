@@ -12,6 +12,8 @@ function showNav() {
   )[0];
   fleetAndPricing.classList.toggle("absolute", window.scrollY > 10);
 }
+
+
 function showMobileNavBar() {
   let navBar = document.getElementsByClassName("mobileNavBar")[0];
   navBar.classList.toggle("active");
