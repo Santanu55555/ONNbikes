@@ -118,6 +118,7 @@ function popup1(){
         <h1 style="color: #1d2d51;">THANK YOU <i class="fas fa-glass-cheers"></i></h1>
     </div>
 </div>
-</div>`
+</div>
+<div id="footerhe"> </div>`
 }
 export {popup1}
