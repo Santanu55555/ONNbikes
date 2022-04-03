@@ -760,8 +760,6 @@ function showTimingTab(para, i, date) {
   );
   availableTimings.innerHTML = "";
   let today = new Date();
-  console.log('today:', today)
-  
   if (
     date.getDate() == today.getDate() &&
     date.getMonth() == today.getMonth() &&

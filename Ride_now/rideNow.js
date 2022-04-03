@@ -469,7 +469,7 @@ bikes();
 // function for booknow button
 function fav(e) {
   const currLoggedIn = JSON.parse(localStorage.getItem("currLoggedIn"));
-  if (currLoggedIn.length == 1) {
+  if (currLoggedIn.length < 1 ) {
     showLoginPopup();
   } else {
     showSelectPickupOverlay();

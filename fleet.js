@@ -1,6 +1,6 @@
 const fleet123=()=>{
 return`   <div class="fetchDiv">
-<button id="Newbtn" onclick=" removePopUp() "> </button>
+<a href="index.html"><button id="Newbtn" > </button></a>
 
 <div id="fetch-left">
     <div id="select">SELECT CITY  <i class="arrow down"></i></div>
