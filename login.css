@@ -1,0 +1,148 @@
+.button{
+    background-color: #fff;
+    color: #34495e;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 29px -6px rgba(0, 0, 0, 75);
+    transition: 0.45;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.button:hover{
+    background:  #34495e;
+    color:#fff ;
+}
+#popup{
+    background: rgba(0, 0, 0, 0.5) ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content{
+    display: flex;
+    height: 500px;
+    width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.popup-content > i {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+#leftimage{
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 300px;
+}
+#leftimage>img{
+    height: 450px;
+    width: 300px;
+}
+#login-signup{
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 500px;
+}
+#head1{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+
+}
+#login{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#login:hover{
+    background:  rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+#signup{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#signup:hover{
+    background:  rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.vl {
+    margin: 5px;
+    border-left: 3px solid #34495e;
+    height: 30px;
+}
+#head2{
+display: flex;
+    padding: 10px;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+}
+#head2 > div{
+  display: flex;
+  justify-content: space-around;
+ text-align: center;
+ padding-top: 8px;
+  height: 40px;
+  width: 140px;
+  /* border: 1px solid black; */
+  border-radius: 2px;
+  font-size: medium;
+}
+#facebook {
+  background-color: #3b5998;
+  font-family: Helvetica;
+  font-size: bolder;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  
+}
+#google{
+  background-color: rgb(223, 60, 60);
+  font-family: Helvetica;
+  font-size: bolder;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+  
+}
+#appendMe{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap : 20px;
+  padding: 20px;
+  margin: 20px;
+  
+}
+.dot{
+height: 30px;
+  width: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  padding: 5px;
+  display: inline-block;
+  color: black;
+  
+}
+#or{
+  margin: 20px;
+
+ padding-left: 60px;
+}
+

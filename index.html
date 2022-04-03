@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home1.css"/>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./safetypage/css/safety.css">
+    <title>ONN Bikes </title>
+
+</head>
+<style>
+    .footer{
+        position: absolute;
+        /* z-index: 1; */
+        margin-top: 2450px;
+        width: 100%;
+        height:400px;
+    }
+</style>
+
+<body>>
+    
+    <div id="id nahi he"></div>
+   
+    <div id="footerhe"> </div>
+      <div id="popupkrte"></div>
+     
+   
+</body>
+<script src="home.js"></script>
+
+</html>
+<script type="module">  
+  
+
+import {whole} from './whole.js'
+    let mainherebhai= document.getElementById('id nahi he')
+    mainherebhai.innerHTML=(whole())
+    import {popup1} from './popup.js'
+let notokjaanu= document.getElementById('popupkrte')
+notokjaanu.innerHTML=(popup1())
+
+import fleet123 from './fleet.js'
+console.log('fleet123:', fleet123)
+
+let MOhapatra= document.getElementById('fnp')
+MOhapatra.innerHTML=(fleet123()) 
+
+import {body1} from './body.js'
+let okjaanu= document.getElementById('mainpart')
+okjaanu.innerHTML=(body1())
+
+let btn=document.getElementById('button123')
+btn.addEventListener('click',function(){
+    document.querySelector(".fetchDiv").style.display = "flex" ;
+  selectMe()
+})
+
+// document.querySelector(".button123").addEventListener("click",()=>{
+//   document.querySelector(".fetchDiv").style.display = "flex" ;
+//   selectMe()
+// })
+      
+    ///////////      Close POP UP   //////////// 
+
+// document.getElementById("Newbtn").addEventListener("click",()=>{
+//     // document.querySelector(".fetchDiv").style.display = null
+//     windows.location.href="index.html"
+// })
+   
+
+const closeme=()=>{
+    document.querySelector(".fetchDiv").style.display = "none";
+}
+     ///////////      IOpen POP UP   //////////// 
+
+
+
+   ///////////////    City Selection ////////////////
+
+   
+   document.getElementById("select").addEventListener("click",()=>{
+       selectMe()
+   })
+
+   const selectMe = () => {
+
+      document.getElementById("append").innerHTML = null
+      document.getElementById("container").innerHTML = null
+
+      let div = document.createElement("div")
+      div.style.paddingLeft = "30px" ;
+      div.style.paddingTop = "30px" ;
+      div.style.letterSpacing = "3px"
+
+      let banglore = document.createElement("p")
+      banglore.innerText= "BANGLORE" ;
+      banglore.style.cursor = "pointer" ;
+      banglore.style.color = "black" ;
+      banglore.addEventListener("click", () => {
+
+          bangloreData()
+      })
+
+      let hydrabad = document.createElement("p")
+      hydrabad.innerText = "HYDRABAD" ;
+      hydrabad.style.color = "black" ;
+      hydrabad.style.cursor = "pointer" ;
+      hydrabad.addEventListener("click", () => {
+          hydrabadData()
+      })
+
+      let jaipur = document.createElement("p")
+      jaipur.innerText = "JAIPUR" ;
+      jaipur.style.color = "black" ;
+      jaipur.style.cursor = "pointer" ;
+      jaipur.addEventListener("click", () => {
+
+              jaipurData()
+
+      })
+
+      let gurugav = document.createElement("p")
+      gurugav.innerText = "GURUGRAM" ;
+      gurugav.style.color = "black" ;
+      gurugav.style.cursor = "pointer" ;
+      gurugav.addEventListener("click", () => {
+
+          gurgavData()
+
+          })
+
+      let pune = document.createElement("p")
+      pune.innerText = "PUNE" ;
+      pune.style.cursor = "pointer" ;
+      pune.style.color = "black" ;
+      pune.addEventListener("click", () => {
+
+              puneData()
+
+              })
+      
+
+      let mumbai = document.createElement("p")
+      mumbai.innerText= "MUMBAI" ;
+      mumbai.style.cursor = "pointer" ;
+      mumbai.style.color = "black" ;
+      mumbai.addEventListener("click", () => {
+
+              mumbaiData()
+
+              })
+
+      let ahmedabad = document.createElement("p")
+      ahmedabad.innerText = "AHMEDABAD" ;
+      ahmedabad.style.color = "black" ;
+      ahmedabad.style.cursor = "pointer" ;
+      ahmedabad.addEventListener("click", () => {
+
+                  ahmedabadData()
+
+                  })
+
+     div.append(banglore,jaipur,hydrabad,gurugav,pune,mumbai,ahmedabad)
+
+      document.getElementById("append").append(div)
+
+   }
+
+         
+const bangloreData = () => {
+
+  document.getElementById("append").innerHTML=null
+   
+
+  let div = document.createElement("div")
+  div.style.paddingLeft = "10px" ;
+      div.style.letterSpacing = "2px"
+      div.style.lineHeight ="30px"
+
+  let p1 = document.createElement("li")
+  p1.innerText = "KORAMANGALA"
+
+  let p2 = document.createElement("li")
+  p2.innerText = "ELECTRONIC CITY"
+
+  let p3 = document.createElement("li")
+  p3.innerText = "MS RAMAIAH COLLEGE"
+
+  let p4 = document.createElement("li")
+  p4.innerText = "KUNDALAHALLI"
+
+  let p5 = document.createElement("li")
+  p5.innerText = "HSR 7TH SECTOR"
+
+  let p6 = document.createElement("li")
+  p6.innerText = "ELECTRONIC CITY HUB"
+
+  div.append(p1,p2,p3,p4,p5,p6)
+  document.getElementById("container").append(div)
+
+  
+
+}
+
+
+const  hydrabadData = () => {
+
+  document.getElementById("append").innerHTML=null
+   
+
+  let div = document.createElement("div")
+  div.style.paddingLeft = "10px" ;
+      div.style.letterSpacing = "2px"
+      div.style.lineHeight ="30px"
+
+  let p1 = document.createElement("li")
+  p1.innerText = "MADHAPUR"
+
+  let p2 = document.createElement("li")
+  p2.innerText = "GACHIBOWLI"
+
+  let p3 = document.createElement("li")
+  p3.innerText = "AMEERPET"
+
+  let p4 = document.createElement("li")
+  p4.innerText = "CHANDA NAGAR"
+
+  let p5 = document.createElement("li")
+  p5.innerText = "DIAMOND HILL"
+
+  let p6 = document.createElement("li")
+  p6.innerText = "MADHAPUR HUB"
+
+  div.append(p1,p2,p3,p4,p5,p6)
+  document.getElementById("container").append(div)
+
+}
+
+
+const jaipurData = () => {
+
+  document.getElementById("append").innerHTML=null
+   
+
+   let div = document.createElement("div")
+   div.style.paddingLeft = "10px" ;
+       div.style.letterSpacing = "2px"
+       div.style.lineHeight ="30px"
+
+   let p1 = document.createElement("li")
+   p1.innerText = "GT - GAURAV TOWER"
+
+   let p2 = document.createElement("li")
+   p2.innerText = "C SCHEME"
+
+   let p3 = document.createElement("li")
+   p3.innerText = "NEW AATISH MARKET- METRO STATION"
+
+   let p4 = document.createElement("li")
+   p4.innerText = "JAGATPURA ROAD"
+
+   let p5 = document.createElement("li")
+   p5.innerText = "VIVACITY MALL, JAGATPURA"
+
+   let p6 = document.createElement("li")
+   p6.innerText = "MI ROAD, SILVER SQUARE MALL"
+
+   div.append(p1,p2,p3,p4,p5,p6)
+   document.getElementById("container").append(div)
+
+
+
+  
+
+
+}
+
+
+const   gurgavData = () => {
+  
+  document.getElementById("append").innerHTML=null
+   
+
+   let div = document.createElement("div")
+   div.style.paddingLeft = "10px" ;
+       div.style.letterSpacing = "2px"
+       div.style.lineHeight ="30px"
+
+   let p1 = document.createElement("li")
+   p1.innerText = "BIKE SURGEON" ;
+
+   div.append(p1)
+   document.getElementById("container").append(div)
+
+  
+}
+
+const  puneData = () => {
+
+  document.getElementById("append").innerHTML=null
+   
+
+   let div = document.createElement("div")
+   div.style.paddingLeft = "10px" ;
+       div.style.letterSpacing = "2px"
+       div.style.lineHeight ="30px"
+
+   let p1 = document.createElement("li")
+   p1.innerText = "DECCAN GYM"
+
+   let p2 = document.createElement("li")
+   p2.innerText = "SHIVAJI NAGAR"
+
+   let p3 = document.createElement("li")
+   p3.innerText = "FC ROAD"
+
+   let p4 = document.createElement("li")
+   p4.innerText = "HINJAVADI IT PARK"
+
+   let p5 = document.createElement("li")
+   p5.innerText = "SADASHIV PETH"
+
+   let p6 = document.createElement("li")
+   p6.innerText = "KOREGAON PARK"
+
+   div.append(p1,p2,p3,p4,p5,p6)
+   document.getElementById("container").append(div)
+        
+
+}
+
+const  mumbaiData = () => {
+
+  document.getElementById("append").innerHTML=null
+   
+
+   let div = document.createElement("div")
+   div.style.paddingLeft = "10px" ;
+       div.style.letterSpacing = "2px"
+       div.style.lineHeight ="30px"
+
+   let p1 = document.createElement("li")
+   p1.innerText = "DATAR"
+
+   let p2 = document.createElement("li")
+   p2.innerText = "SANPADA"
+
+   let p3 = document.createElement("li")
+   p3.innerText = "CST"
+
+   let p4 = document.createElement("li")
+   p4.innerText = "THANE RAILWAY STATION"
+
+   let p5 = document.createElement("li")
+   p5.innerText = "SEA LINK"
+
+   let p6 = document.createElement("li")
+   p6.innerText = "BANDRA"
+
+   div.append(p1,p2,p3,p4,p5,p6)
+   document.getElementById("container").append(div)
+        
+
+}
+
+const   ahmedabadData = () => {
+  document.getElementById("append").innerHTML=null
+   
+
+   let div = document.createElement("div")
+   div.style.paddingLeft = "10px" ;
+       div.style.letterSpacing = "2px"
+       div.style.lineHeight ="30px"
+
+   let p1 = document.createElement("li")
+   p1.innerText = "VIJAY CROSS ROAD"
+
+   div.append(p1)
+   document.getElementById("container").append(div);
+ 
+}
+
+</script>
+
+<script type="module">
+      import footer from './footer.js'
+console.log('footer:', footer)
+let Santanu= document.getElementById('footerhe')
+Santanu.innerHTML=footer()
+
+</script>
