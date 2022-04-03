@@ -167,7 +167,7 @@ function test() {
     payment_total_color.addEventListener( "click", paymentPage );
     localStorage.setItem("onnbike_price",net_money);
     function paymentPage() {
-       window.open("../payment_option/payment.html","_parent");
+       window.open("../payment/payment.html","_parent");
     }
   } else if (add2 == 0) {
     payment_total_color.style.background = "rgb(210,211,212)";
